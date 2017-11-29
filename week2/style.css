@@ -1,0 +1,66 @@
+img {
+    max-width: 100%;
+}
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+#grid-flex .grid-item,
+#grid-float .grid-item {
+    width: 50%;
+}
+
+h1,
+h2,
+h3,
+h4,{
+    font-family: sans-serif;
+}
+
+.my-first-item {
+    font-size: 1.5em;
+}
+
+.oter-list-item,
+.grid-item {
+    width: 50%;
+}
+#grid-floats .grid-item{
+    float: left;
+    width: calc(50% - 20px);
+    margin: 0 10px;  
+}
+#grid-floats .grid-item:nth-child(odd) {
+    clear: left;
+}
+@media screen and (min-width: 1024px) {
+    #grid-floats .grid-item {
+        width: 25%;
+    }
+}
+#grid-floats .grid-item:nth-child(even) {
+    clear: none;
+}
+#grid-floats .grid-item:nth-child(4n+1) {
+    clear: left;
+}
+
+
+section {
+    clear: both;
+}
+
+#grid-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#grid-flex ,grid-item {
+    width: 50%;
+}
+
+.grid-item {
+    background-color: goldenrod
+}
